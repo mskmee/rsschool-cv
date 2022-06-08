@@ -1,1 +1,1 @@
-# [https://mskmee.github.io/rsschool-cv/cv](https://mskmee.github.io/rsschool-cv/cv)
+# [https://mskmee.github.io/rsschool-cv](https://mskmee.github.io/rsschool-cv)
