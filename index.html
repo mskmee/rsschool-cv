@@ -1,42 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="icon" href="/icons/24040511582994873.svg">
-    <title>Docment</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="icon" href="./media/fav__icon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+  <title>Maksimenko Maksim CV</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#contacts">Contacts</a>
-                </li>
-                <li>
-                    <a href="#summary">Summary</a>
-                </li>
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-                <li>
-                    <a href="#code">Code</a>
-                </li>
-                <li>
-                    <a href="#courses">Courses</a>
-                </li>
-                <li>
-                    <a href="#english">English</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div>
-        <p>Some text here</p>
+  <header>
+    <nav>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#contacts">Contacts</a>
+        </li>
+        <li class="nav__item">
+            <a href="#summary">Summary</a>
+        </li>
+        <li class="nav__item">
+            <a href="#skills">Skills</a>
+        </li>
+        <li class="nav__item">
+            <a href="#code">Code</a>
+        </li>
+        <li class="nav__item">
+            <a href="#courses">Courses</a>
+        </li>
+        <li class="nav__item">
+            <a href="#english">English</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <section class="section section__profile">
+        <img class="profile__photo" src="./media/profile__photo.jpg" alt="profile_photo">
+          <div itemscope itemtype="https://schema.org/Person" class="profile__title">
+            <h1 class="section__title main__title" itemprop="familyName">Maksimenko <span itemprop="givenName">Maksim</span></h1>
+            <h3 class="section__title" itemprop="jobTitle">Junior Front-End Developer</h3>
+          </div>          
+      </section>
+      <section class="section">
+        <div class="contacts">
+          <h2 id="contacts" class="section__title">Contacts</h2>
+			<ul itemscope itemtype="https://schema.org/Person">
+			  <li class="contact__item">
+				<a itemprop="homeLocation" target="_blank" href="https://www.google.com/maps/place/%D0%98%D1%80%D0%BF%D0%B5%D0%BD%D1%8C,+%D0%9A%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C/@50.5139049,30.1731279,12z/data=!3m1!4b1!4m5!3m4!1s0x472b3216e94dd5db:0x5ce36944e7698f34!8m2!3d50.518775!4d30.2397823">
+					Irpen, Ukraine</a>
+			  </li>
+			  <li class="contact__item">Email:
+				<a itemprop="email" target="_blank" href="mailto:mskmee2@gmail.com">mskmee2@gmail.com</a>
+			  </li>
+			  <li class="contact__item">Github: 
+				<a target="_blank" itemprop="publishingPrinciples" href="https://github.com/mskmee">mskmee</a>
+			  </li>
+			  <li class="contact__item">Telegram: 
+				<a target="_blank" href="https://t.me/mskmee">mskmee</a>
+			  </li>
+			  <li class="contact__item">Discord: Maksim_Maksimenko#6784</li>
+			</ul>
+         </div>
+      </section>
+	  <section class="section">
+		<div class="summary">
+		  <h2 id="summary" class="section__title">Summary</h2>
+		  <p>
+			I like programming. It is fascinating and interesting. I have a main job, programming is a 
+			hobby for me. I have completed several training projects and now I would like to take part in the 
+			creation of a real JavaScript project. My goal is to learn a pure JavaScript at a good level and 
+			learn the React library. I will be glad to join the creation of open source projects. I would like 
+			to work under the guidance of an experienced developer to gain practical experience.
+		  </p>
+		</div>
+	  </section>
+	  <section class="section">
+		<div class="skills">
+			<h2 id="skills" class="section__title">Skills</h2>
+		</div>
+	  </section>
+	  <section class="section">
+		<div class="code">
+			<h2 id="code" class="section__title">Code</h2>
+		</div>
+	  </section>
+	  <section class="section">
+		<div class="courses">
+			<h2 id="courses" class="section__title">Courses</h2>
+		</div>
+	  </section>
+	  <section class="section">
+		<div class="english">
+			<h2 id="english" class="section__title">English</h2>
+		</div>
+	  </section>
     </div>
-    <h1>Some Title</h1>
-<script src="/js/scripts.js"></script>
+  </main>
+  
+<script src="./js/scripts.js"></script>
 </body>
 </html>
