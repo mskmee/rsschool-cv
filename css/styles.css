@@ -69,14 +69,14 @@ a:visited{
     display: flex;
     padding: 25px 30px;
     min-height: 50px;  
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 /* Sections */
 
 .section{
-    width: 50%;
+    width: calc(50% - 20px);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -176,19 +176,11 @@ background-image: url(/media/discord.svg);
 
 /* Skills */
 
-.skills__item{
-    list-style-type: circle;
-}
-
 .skills__item span{
     color: var(--main-color);
 }
 
 /* Courses */
-
-.courses__item{
-    list-style-type: circle;
-}
 
 .courses__item a{
     text-decoration: none;
@@ -199,6 +191,25 @@ background-image: url(/media/discord.svg);
     text-decoration: none;
 }
 
+/* Item */
+.item{
+    list-style-type: none;
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.4em;
+}
+
+.item::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 0px;
+    top: 6px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+}
+
 /* Footer */
  
 .container__footer{
@@ -207,7 +218,8 @@ background-image: url(/media/discord.svg);
     background-color: var(--main-color);
     color: #ffffff;
     align-items: center;
-    margin: 0 auto;    
+    margin: 0 auto;
+    padding: 0 45px;  
 }
 
 .container__footer a{
@@ -220,6 +232,10 @@ background-image: url(/media/discord.svg);
 }
 
 
-.rss__img{
-    height: 80px;
+.rss__logo{
+    height: 60px;
+}
+
+.git__logo{
+    height: 60px;
 }
