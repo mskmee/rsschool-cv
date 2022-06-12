@@ -135,18 +135,21 @@ a:visited{
 /* Contacts */
 
 .contact__item{
+    position: relative;
     list-style-type: none;
     text-decoration: none;
+    line-height: 2.5em;
 }
 
 .contact__item::before{
+    position: absolute;
     height: 15px;
     width: 15px;
-    left: 80px;
-    position: absolute;
     content: "";
+    top: 12px;
     background-size: contain;
     background-repeat: no-repeat;
+    left: -25px;
   }
 
 .contact__item:nth-child(1)::before{
@@ -192,11 +195,12 @@ background-image: url(/media/discord.svg);
 }
 
 /* Item */
+
 .item{
     list-style-type: none;
     position: relative;
     padding-left: 20px;
-    line-height: 1.4em;
+    line-height: 2.5em;
 }
 
 .item::before{
@@ -205,7 +209,7 @@ background-image: url(/media/discord.svg);
     width: 8px;
     height: 8px;
     left: 0px;
-    top: 6px;
+    top: 14px;
     border: 1px solid var(--secondary-color);
     border-radius: 50%;
 }
