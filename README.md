@@ -1,2 +1,1 @@
-# rsschool-cv
-rsschool-cv [0]
+# [https://mskmee.github.io/rsschool-cv](https://mskmee.github.io/rsschool-cv)
