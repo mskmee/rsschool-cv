@@ -146,30 +146,30 @@ a:visited{
     height: 15px;
     width: 15px;
     content: "";
+    left: -25px;
     top: 12px;
     background-size: contain;
     background-repeat: no-repeat;
-    left: -25px;
   }
 
 .contact__item:nth-child(1)::before{
-    background-image: url(/media/location.svg);
+    background-image: url(https://cv-hints.netlify.app/assets/svg/1.svg);
   }
 
 .contact__item:nth-child(2)::before{
-background-image: url(/media/mail.svg);
+background-image: url(https://cv-hints.netlify.app/assets/svg/2.svg);
 }
 
 .contact__item:nth-child(3)::before{
-background-image: url(/media/github.svg);
+background-image: url(https://cv-hints.netlify.app/assets/svg/3.svg);
 }
 
 .contact__item:nth-child(4)::before{
-background-image: url(/media/telegram.svg);
+background-image: url(https://cv-hints.netlify.app/assets/svg/4.svg);
 }
 
 .contact__item:nth-child(5)::before{
-background-image: url(/media/discord.svg);
+background-image: url(https://cv-hints.netlify.app/assets/svg/1.svg);
 }
 
 .contact__item a{
