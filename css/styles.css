@@ -1,5 +1,241 @@
-body{
-    font-size: 21px;
-    font-weight: 300;
+*{
+    box-sizing: border-box;
 }
 
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    line-height: 1.4em;
+}
+
+/* Body */
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+}
+
+/* Variables */
+:root{
+    --main-color: #FF9E00;
+    --secondary-color: #106EE6;
+}
+
+/* Navigation */
+
+.nav__list{
+    max-width: 1440px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: var(--main-color);
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    height: 80px;
+    align-items: center;
+    justify-content: right;
+}
+
+.nav__item{
+    padding: 0 10px;
+}
+
+.nav__item a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover{
+    text-shadow: 0px 1px 0px rgba(0,0,0,1), 0 0 
+    5px rgba(255,255,255,0.8),0 -4px 15px 
+    rgba(255,255,255,0.5);
+  }
+
+
+a:visited{
+    text-decoration: none;
+}
+
+/* Main */
+
+.container{
+    max-width: 1440px;
+    display: flex;
+    padding: 25px 30px;
+    min-height: 50px;  
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Sections */
+
+.section{
+    width: calc(50% - 20px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: var(--secondary-color) solid 5px;
+    padding: 35px;
+}
+
+@media (max-width: 768px) {
+    body{
+        font-size: 1.3em;
+    }
+    .section{
+        width: 100%;
+    }
+}
+
+.section:nth-child(6){
+    border-bottom: none;
+}
+
+.section:nth-child(7){
+    border-bottom: none;
+
+}
+
+.section__title{
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.section__profile{
+    width: 100%;
+    justify-content: space-around;
+}
+
+/* Profile */
+
+.profile__photo{
+    width: 300px;
+    height: 200px;
+    border-radius: 44% 56% 61% 39% / 70% 19% 81% 30%    ;
+    transition: border-radius 500ms ease-in-out;
+}
+
+.profile__photo:hover{
+    border-radius: 18% 82% 30% 70% / 67% 71% 29% 33% ;
+}
+
+
+.main__title{
+    text-transform: capitalize;
+    border-bottom: var(--main-color) solid 1px;
+}
+
+/* Contacts */
+
+.contact__item{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.contact__item::before{
+    height: 15px;
+    width: 15px;
+    left: 80px;
+    position: absolute;
+    content: "";
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+.contact__item:nth-child(1)::before{
+    background-image: url(/media/location.svg);
+  }
+
+.contact__item:nth-child(2)::before{
+background-image: url(/media/mail.svg);
+}
+
+.contact__item:nth-child(3)::before{
+background-image: url(/media/github.svg);
+}
+
+.contact__item:nth-child(4)::before{
+background-image: url(/media/telegram.svg);
+}
+
+.contact__item:nth-child(5)::before{
+background-image: url(/media/discord.svg);
+}
+
+.contact__item a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+/* Skills */
+
+.skills__item span{
+    color: var(--main-color);
+}
+
+/* Courses */
+
+.courses__item a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.contact__item a:visited{
+    text-decoration: none;
+}
+
+/* Item */
+.item{
+    list-style-type: none;
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.4em;
+}
+
+.item::before{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 0px;
+    top: 6px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+}
+
+/* Footer */
+ 
+.container__footer{
+    justify-content: space-between;
+    display: flex;
+    background-color: var(--main-color);
+    color: #ffffff;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 45px;  
+}
+
+.container__footer a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.container__footer a:hover{
+    color: var(--secondary-color);
+}
+
+
+.rss__logo{
+    height: 60px;
+}
+
+.git__logo{
+    height: 60px;
+}

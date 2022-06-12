@@ -46,6 +46,6 @@ Since 2022 I have been interested in FrontEnd technologies.
 
 
 ## Languages:
-* English - Intermediate/Upper-intermediate (according to the online test at EFset Logo www.efset.org)
+* language - Intermediate/Upper-intermediate (according to the online test at EFset Logo www.efset.org)
 * Russian - Native
 * Ukrainian - Native
